@@ -3,36 +3,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: #ba0018; ---------------> WHY????????? */
+  font-family: Sans-serif;
 }
+
 main{
   width: 80%;
   margin: 5% auto; /*for centering*/
 }
+
 header{
-  background: #fed021;
+  background: #ba0018;
   width: 100%;
   height: 150px;
   /* border: 1px solid red; */
 }
 
 h1{
-  color : #A66B49;
+  color : #ba0018;
+  margin: 25px 30px 0px 30px;
   /* margin-top: 30px; */
   /* margin-left: 30px;
   padding-top: 30px; */
 }
 
+h2{
+  font-weight: 700;
+  font-size: 40px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  display: block;
+  }
+
 section{
   width: 100%;
 }
 
-.cake-logo{
-  width: 80px;
-  /* border: 1px solid blue; */
-  border-radius: 25px;
-}
-
-
+/************************************ header section */
 
 .colLogo{
   width:30%;
@@ -43,124 +50,89 @@ section{
   padding-left:20px;
 }
 
-.colNav{
-  width: 30%;
-  height: 100px;
-  float: left;
-  padding-top: 20px;
-  padding-left: 20px;
+.kitkat-logo{
+  width: 100px;
 }
 
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+/******************************************* Nav */
+
+.colNav{
+  width: 60%;
+  height: 30px;
+  float: left;
+  margin-top: 70px;
+  }
+
+.nav{
+    height: 20px;
+  }
+
+.navLink{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Sans-serif;
 }
+
+
+/* ------------------------------------banner style----------------- */
 
 .navList{
   list-style: none; /*remove bullets*/
   display: inline;
   margin: 6%;
-  /* float: none; */
-  /* text-align: center; */
-  padding: 30px;
+  color: #ffffff;
+  width: 30px;
   }
 
-/* to make rows and columns use float and clear */
-.row{
-  width: 100%;
-  height: 600px;
-  /* background: gray; */
-}
-.col{
-  width: 50%;
-  height: 500px;
-  float:left;
-  padding: 30px;
-  /* background: cyan; */
-  /* border: 2px solid red; */
-}
-/* floats are cleared after the row */
-.row:after{
-  clear:both;
-  display:table;
-  content:"";
-}
-.chocolates{
-  width: 60%;
-  height:auto;
-  max-height: 300px;
-}
-.nameChocolate{
-  background: black;
-  color:whitesmoke;
-  margin-bottom: 30px;
-}
-.priceChocolate{
-  color: #A66B49;
-  line-height: 25px;
-
-}
-.ingredients{
-  color:#A66B49;
-  margin-bottom: 30px;
-}
-.description{
-  font-size: 18px;
-  line-height: 25px;
-  width: 60%;
-
-}
-
 .banner{
-  width:95%;
+  width:80%;
   height: auto;
-  max-height: 300px;/*restricting the height not to exceed the limit*/
-  margin:20px auto;/*to center*/
+  max-height: 500px;/*restricting the height not to exceed the limit*/
+  margin: auto;/*to center*/
   display:block;/*to change inline element to block type*/
+  z-index : -1;/*send backward*/
+  position : absolute;
+  top : 200px;
 }
-
 .bannerText1{
-  color : orange;
-  /* margin-left: 20px; */
+  color :#ffffff;
+  font-size: 40px;
+  text-align: right;
+  margin-top: 10%;
+  margin-right: 5%;
 
 }
-.bannerText2{
-
-}
-/* cake style */
-
-h1{
-  /* color: #fed021; */
-  margin: 25px 30px 0px 30px;
+.bannerDiv{
+  /* border : 2px solid blue; */
+  height:400px;
+  width:100%;
 }
 
+/********************************************* recipe section */
 
-h4{
-  color:#fed021;
+.recipe{
+  width: 40%;
+  height:auto;
+  margin-left: 30px;
 }
-/* css selctors - tag, id, class */
-.anotherHeading1{
-  /* color: red; /* color name */
-  /* color: #FF0000; /* hex code */
 
-  color: hsl(9, 100%, 64%);
+.recipe:hover{
+  border : 3px solid #ba0018;
+  padding: 10px;
 }
-.anotherHeading2{
-  color: rgb(255,0,0);
-}
+
 #introPara{
   margin: 25px 30px;
   line-height: 30px;
   width: 60%;
 }
-.ingradients{
-  /* border : 2px solid blue; */
-  padding: 10px  0px;
-  background: gray;
-  width: 60%;
-  margin: 30px;
+
+.ingredients{
+  color:#A66B49;
+  margin-bottom: 30px;
 }
+
 .ingradientsList{
   padding: 10px;
   border : 2px solid #fed021;
@@ -171,18 +143,68 @@ h4{
 .list{
   list-style: none;
   line-height: 30px;
-
 }
-.cake{
-  width: 40%;
+
+/************************************************** chocolate section */
+
+/* to make rows and columns use float and clear */
+
+h1, .titleName{
+  background: #ba0018;
+  color:whitesmoke;
+  /* margin-bottom: 30px; */
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+
+.row{
+  width: 100%;
+  height: 600px;
+  }
+
+.col{
+  width: 50%;
+  height: 600px;
+  float:left;
+  padding: 30px;
+  /* background: cyan; */
+  border: 2px solid red;
+}
+
+/* floats are cleared after the row */
+.row:after{
+  clear:both;
+  display:table;
+  content:"";
+}
+
+.chocolates{
+  width: 60%;
   height:auto;
-  margin-left: 30px;
+  max-height: 300px;
+}
 
+.nameChocolate{
+  background: black;
+  color:whitesmoke;
+  margin-bottom: 30px;
 }
-.cake:hover{
-  border : 3px solid orange;
-  padding: 10px;
+
+.priceChocolate{
+  color: #A66B49;
+  line-height: 25px;
 }
+
+.description{
+  font-size: 18px;
+  line-height: 25px;
+  width: 60%;
+}
+
+/******************************************* contac */
+
 
 .contactFrom{
   /* background-color: gray; */
@@ -193,6 +215,7 @@ h4{
 .textarea{
   /* margin-top: 50px; */
 }
+
 .formHeading{
   color: #A66B49;
 }
