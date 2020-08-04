@@ -3,7 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #ba0018; ---------------> WHY????????? */
+
+
+}
+body{
+  /* background-color: #ba0018; */
   font-family: Sans-serif;
 }
 
@@ -17,6 +21,8 @@ header{
   width: 100%;
   height: 150px;
   /* border: 1px solid red; */
+  position: sticky;
+  top: 0;
 }
 
 h1{
@@ -100,7 +106,7 @@ section{
   font-size: 40px;
   text-align: right;
   margin-top: 10%;
-  margin-right: 5%;
+  margin-right: 10%;
 
 }
 .bannerDiv{
@@ -110,6 +116,25 @@ section{
 }
 
 /********************************************* recipe section */
+
+.rowRecipe{
+  width: 100%;
+}
+
+.colImage{
+  width: 40%;
+  height: auto;
+  background: gray;
+  float: left;
+}
+
+.colText{
+  width: 60%;
+  height: auto;
+  background: gray;
+  float: left;
+}
+
 
 .recipe{
   width: 40%;
@@ -172,6 +197,7 @@ h1, .titleName{
   /* background: cyan; */
   border: 2px solid red;
 }
+
 
 /* floats are cleared after the row */
 .row:after{
