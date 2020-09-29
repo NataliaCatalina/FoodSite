@@ -9,45 +9,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <title>Kitkat</title>
 
-<!-- our stylesheet -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
 
   <body>
     <main id="main">
 
-<!-- header section -->
-
       <header class="rowHeader">
-
-          <img class="kitkat-logo" class="images/logo.png" src="images/icon.jpg" alt="kitkat-logo">
-
-          <nav class="colNav">
-            <ul>
-              <li class="navList homeLink"><a class="navLink" href="#home">Home</a></li>
-              <li class="navList"><a class="navLink" href="#recipe">Recipe</a></li>
-              <li class="navList"><a class="navLink" href="#Products">Products</a></li>
-              <li class="navList"><a class="navLink" href="#contact">Contact</a></li>
-            </ul>
+        <img class="kitkat-logo" class="images/logo.png" src="images/icon.jpg" alt="kitkat-logo">
+        <nav class="colNav">
+          <ul>
+            <li class="navList homeLink"><a class="navLink" href="#home">Home</a></li>
+            <li class="navList"><a class="navLink" href="#recipe">Recipe</a></li>
+            <li class="navList"><a class="navLink" href="#Products">Products</a></li>
+            <li class="navList"><a class="navLink" href="#contact">Contact</a></li>
+          </ul>
         </nav>
       </header>
 
-      <section id="home" class="section">
+      <section id="home" class="banner-section">
+
+        <img src="images/banner2.jpg" alt="Banner Image" class="banner"/>
+
         <div class="bannerText1">
           <h2>CREATE YOUR BREAK</h2>
-        </div>
-
-        <div class="bannerDiv">
-          <img src="images/banner2.jpg" alt="Banner Image" class="banner"/>
         </div>
 
       </section>
 
 <!-- recipe section -->
 
-      <section id="recipe" class="section">
+      <section id="recipe">
 
-        <h1>Homemade Kit Kat Bars</h1>
+        <h1 class="titleName">Homemade Kit Kat Bars</h1>
 
         <div class="row clearfix">
 
@@ -67,31 +61,34 @@
                 <li class="list">1 cup semi-sweet chocolate chips</li>
               </ul>
             </div>
-            <div class="instruction-list">
-              <ol ><p class="instruction">Instructions</p>
-                 <li>Line an ungreased 9 x 13 baking dish with layer of club crackers</li>
-                 <li>In a large saucepan, over low to medium heat, melt butter and both sugars gently - while stirring.</li>
-                 <li>Stir in graham cracker crumbs and milk.</li>
-                 <li>Stir well until all is melted and combined (do not allow miture to boil.)</li>
-                 <li>Remove from heat and spread half the butter mixture evenly over crackers.</li>
-                 <li>Do your best to spread it out evenly.</li>
-                 <li>Layer with another layer of crackers.</li>
-                 <li>Then spread the other half of the butter mixture on top.</li>
-                 <li>Then a final layer of crackers on top of that.</li>
-                 <li>In a small saucepan, combine peanut butter and chocolate chips.</li>
-                 <li>Melt over medium-low heat, stirring constantly until completely melted and blended.</li>
-                 <li>Spread evenly over top layer of crackers.</li>
-                 <li>Cover with plastic wrap and pop it in the fridge for an hour or two. You want that top chocolate layer to really cool down and firm up.</li>
-                 <li>Once it is completely cooled, slice into small squares.</li>
-               </ol>
-             </div>
+       </div> <!-- end rowRecipe -->
 
-      </div> <!-- end rowRecipe -->
+      <div class="instruction-list">
+        <ol ><p class="instruction">Instructions</p>
+           <li>Line an ungreased 9 x 13 baking dish with layer of club crackers</li>
+           <li>In a large saucepan, over low to medium heat, melt butter and both sugars gently - while stirring.</li>
+           <li>Stir in graham cracker crumbs and milk.</li>
+           <li>Stir well until all is melted and combined (do not allow miture to boil.)</li>
+           <li>Remove from heat and spread half the butter mixture evenly over crackers.</li>
+           <li>Do your best to spread it out evenly.</li>
+           <li>Layer with another layer of crackers.</li>
+           <li>Then spread the other half of the butter mixture on top.</li>
+           <li>Then a final layer of crackers on top of that.</li>
+           <li>In a small saucepan, combine peanut butter and chocolate chips.</li>
+           <li>Melt over medium-low heat, stirring constantly until completely melted and blended.</li>
+           <li>Spread evenly over top layer of crackers.</li>
+           <li>Cover with plastic wrap and pop it in the fridge for an hour or two. You want that top chocolate layer to really cool down and firm up.</li>
+           <li>Once it is completely cooled, slice into small squares.</li>
+         </ol>
+       </div>
+
+
       </section>
 
 
-      <!-- chocolate section -->
-      <section id="Products" class="section">
+<!-- chocolate section -->
+
+      <section id="Products">
         <h1 class="titleName">Products</h1>
 
         <div class="row clearfix">
@@ -192,8 +189,8 @@
       <p>Copyright@2020</p><br>
       <p>Developed by Natalia Catalina</p><br>
       <div class="socialLinks">
-        <img class="social" src="images/icons8-facebook-64.png" alt="Facebook">
-        <img class="social" src="images/icons8-instagram-100.png" alt="Instagram">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
       </div>
     </footer>
 
